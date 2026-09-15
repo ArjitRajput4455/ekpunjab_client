@@ -25,7 +25,7 @@ export default function About() {
     {
       nameKey: "about.leader7Name",
       roleKey: "about.leader7Role",
-      initials: "A",
+      initials: "JPS",
     },
     {
       nameKey: "about.leader8Name",
@@ -126,14 +126,14 @@ export default function About() {
           <h2 className="text-2xl font-bold text-[#003366] mb-6">{t('about.leadership')}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {leadership.map((leader, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 border hover:shadow-lg transition">
+              <div key={index} className="bg-black rounded-xl p-6 border hover:shadow-lg transition">
                 <div className="flex items-start gap-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#003366] to-[#1B5E20] rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-xl">{leader.initials}</span>
+                    <span className="text-yellow font-bold text-xl">{leader.initials}</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">{t(leader.nameKey)}</h3>
-                    <p className="text-sm text-[#003366] mb-2">{t(leader.roleKey)}</p>
+                    <h3 className="font-bold text-yellow-400 mb-1">{t(leader.nameKey)}</h3>
+                    <p className="text-sm text-[#f6fff5] mb-2">{t(leader.roleKey)}</p>
                     {leader.bioKey && <p className="text-sm text-gray-600">{t(leader.bioKey)}</p>}
                     {leader.phone && <p className="text-sm text-gray-600">{leader.phone}</p>}
                   </div>
